@@ -30,8 +30,8 @@ body {
 	background: transparent;
 }
 ::-webkit-scrollbar-thumb {
-	background: #f0a500 !important;
+	background: #ff9ffd !important;
 }
 ::-webkit-scrollbar-thumb:hover {
-	background: #ce8d02 !important;
+	background: #ff9ffd !important;
 }
