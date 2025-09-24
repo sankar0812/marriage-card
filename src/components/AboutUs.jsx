@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
+import storybg1 from "../assets/images/couple-bg.jpg";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -15,16 +16,14 @@ const itemVariants = {
 };
 
 const AboutUs = () => {
-
   const [active, setActive] = useState(null);
-
 
   const timeline = [
     {
       id: 1,
       title: "The First Chapter",
       text: "It all started in 2023 when we met at a Traing center. That first conversation felt endless...",
-      img: "/story-1.jpg",
+      img: storybg1,
     },
     {
       id: 2,

@@ -10,12 +10,14 @@ import Footer from './components/Footer';
 import VideoSection  from './components/VideoSection';
 import TimelineSection from './components/TimelineSection';
 import QuotesSection from './components/QuotesSection';
+import WeddingIntro from './components/WeddingIntro';
 
 function App() {
   return (
     <div className="font-sans bg-background text-gray-800 antialiased">
       <main>
         <Hero />
+        <WeddingIntro />
         <Countdown weddingDate="2025-10-26T14:00:00" />
         {/* <CountdownSection /> */}
         <QuotesSection />
@@ -24,7 +26,7 @@ function App() {
         <VideoSection />
         <TimelineSection />
         <VenueDetails />
-        <MapAndLocation />
+        {/* <MapAndLocation /> */}
       </main>
       <Footer />
     </div>
