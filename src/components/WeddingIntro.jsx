@@ -81,8 +81,8 @@
 // src/components/WeddingIntro.jsx
 import { Heart } from "lucide-react";
 import { motion } from "framer-motion";
-// import groom from "../assets/images/groom.jpg";
-// import bride from "../assets/images/bride.jpg";
+import groom from "../assets/images/groom.png";
+import bride from "../assets/images/bride.png";
 
 export default function WeddingIntro() {
   return (
@@ -103,7 +103,7 @@ export default function WeddingIntro() {
         >
           <h3 className="text-pink-500 font-cursive text-3xl mb-4">Sankar</h3>
           <motion.img
-            src= "/assets/images/groom.jpg"
+            src={groom}
             alt="Sankar"
             className="w-40 h-40 object-cover rounded-full mx-auto shadow-lg"
             whileHover={{ scale: 1.1, rotate: 2 }}
@@ -139,7 +139,7 @@ export default function WeddingIntro() {
             $$$$
           </h3>
           <motion.img
-            src="/images/bride.jpg"
+            src={bride}
             alt="$$$$"
             className="w-40 h-40 object-cover rounded-full mx-auto shadow-lg"
             whileHover={{ scale: 1.1, rotate: -2 }}

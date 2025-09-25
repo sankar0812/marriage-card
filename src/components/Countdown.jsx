@@ -63,7 +63,7 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
 const calculateTimeLeft = () => {
-  const weddingDate = new Date("2025-10-26T00:00:00"); // 🎉 your wedding date
+  const weddingDate = new Date("2026-10-26T00:00:00");
   const now = new Date();
   const difference = weddingDate - now;
 
@@ -91,7 +91,9 @@ const CountdownSection = () => {
   }, []);
 
   return (
-    <section className="relative bg-gradient-to-r from-pink-200 via-red-300 to-pink-400 py-20 text-white">
+    // <section className="relative bg-gradient-to-r from-pink-200 via-red-300 to-pink-400 py-20 text-white">
+    // <section className="relative bg-gradient-to-r from-blue-200 via-blue-400 to-blue-600 py-20 text-white">
+      <section className="relative bg-gradient-to-r from-gray-100 via-white-200 to-white-300 py-20 text-gray-800 shadow-md shadow-gray-200">
       <div className="container mx-auto text-center px-4">
         <motion.h2
           initial={{ opacity: 0, y: -20 }}
@@ -99,7 +101,7 @@ const CountdownSection = () => {
           transition={{ duration: 1 }}
           className="text-5xl md:text-6xl font-script mb-6 drop-shadow-lg"
         >
-          Countdown to Our Forever 💍
+          Countdown to Our Forever
         </motion.h2>
         <motion.p
           initial={{ opacity: 0 }}
@@ -107,7 +109,7 @@ const CountdownSection = () => {
           transition={{ delay: 0.5, duration: 1 }}
           className="text-lg md:text-2xl mb-10 font-light"
         >
-          We can’t wait to celebrate with you on <span className="font-bold">October 26, 2025</span>
+          We can’t wait to celebrate with you on <span className="font-bold">October 26, 2026</span>
         </motion.p>
 
         {/* Countdown Timer */}

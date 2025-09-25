@@ -5,9 +5,9 @@ import { useState, useEffect } from "react";
 import wedbg1 from "../assets/images/couple-holding-hands.jpg";
 import wedbg2 from "../assets/images/wedding-ring-finger.jpg";
 import wedbg3 from "../assets/images/Wedding-bg.jpg";
-import wedbg4 from "../assets/images/couple-bg.jpg";
+// import wedbg4 from "../assets/images/couple-bg.jpg";
 
-const images = [wedbg1, wedbg2, wedbg3, wedbg4];
+const images = [wedbg1, wedbg2, wedbg3];
 
 const Hero = () => {
   const [index, setIndex] = useState(0);
